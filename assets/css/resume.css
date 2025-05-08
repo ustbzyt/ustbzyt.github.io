@@ -15,11 +15,15 @@
     background: white;
     box-shadow: var(--shadow);
     border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
 .resume-header {
+    grid-column: 1 / -1;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding-bottom: 30px;
     border-bottom: 2px solid var(--light-gray);
 }
@@ -63,11 +67,11 @@
 }
 
 .resume-section {
-    margin-bottom: 50px;
-    padding: 30px;
     background: var(--light-gray);
     border-radius: 12px;
     transition: transform 0.3s ease;
+    height: fit-content;
+    padding: 25px;
 }
 
 .resume-section:hover {
@@ -76,9 +80,9 @@
 
 .resume-section h2 {
     color: var(--primary-color);
-    font-size: 1.8em;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
     border-bottom: 3px solid var(--secondary-color);
     font-weight: 600;
 }
@@ -86,21 +90,21 @@
 /* Skills Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .skill-category {
     background: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: var(--shadow);
 }
 
 .skill-category h3 {
     color: var(--primary-color);
-    margin-bottom: 15px;
-    font-size: 1.3em;
+    margin-bottom: 12px;
+    font-size: 1.2em;
     font-weight: 600;
 }
 
@@ -111,8 +115,8 @@
 
 /* Education Section */
 .education-item {
-    margin-bottom: 30px;
-    padding: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
     background: white;
     border-radius: 8px;
     box-shadow: var(--shadow);
@@ -122,24 +126,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .edu-header h3 {
     color: var(--primary-color);
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 600;
 }
 
 .date {
     color: var(--secondary-color);
     font-weight: 500;
+    font-size: 0.95em;
 }
 
 /* Experience Section */
 .experience-item {
-    margin-bottom: 35px;
-    padding: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
     background: white;
     border-radius: 8px;
     box-shadow: var(--shadow);
@@ -149,19 +154,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .exp-header h3 {
     color: var(--primary-color);
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 600;
 }
 
 .company {
     color: var(--secondary-color);
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    font-size: 0.95em;
 }
 
 .experience-item ul {
@@ -169,9 +175,10 @@
 }
 
 .experience-item li {
-    margin-bottom: 12px;
-    line-height: 1.7;
+    margin-bottom: 10px;
+    line-height: 1.6;
     color: var(--text-color);
+    font-size: 0.95em;
 }
 
 /* Publications Section */
@@ -181,18 +188,19 @@
 }
 
 .publications-list li {
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 15px;
+    padding: 15px;
     background: white;
     border-radius: 8px;
     box-shadow: var(--shadow);
-    line-height: 1.7;
+    line-height: 1.6;
+    font-size: 0.95em;
 }
 
 .publications-list a {
     color: var(--secondary-color);
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 8px;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -204,11 +212,11 @@
 /* Awards Section */
 .awards-list {
     display: grid;
-    gap: 25px;
+    gap: 20px;
 }
 
 .award-item {
-    padding: 20px;
+    padding: 15px;
     background: white;
     border-radius: 8px;
     box-shadow: var(--shadow);
@@ -218,24 +226,47 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .award-header h3 {
     color: var(--primary-color);
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 600;
 }
 
 .award-description {
     color: var(--text-color);
     line-height: 1.6;
-    margin-top: 10px;
+    margin-top: 8px;
+    font-size: 0.95em;
+}
+
+/* Peer Review Section */
+.resume-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resume-section ul li {
+    padding: 12px 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    color: var(--text-color);
+}
+
+/* Professional Affiliation Section */
+.resume-section .experience-item {
+    margin-bottom: 0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .resume-container {
+        grid-template-columns: 1fr;
         margin: 20px;
         padding: 20px;
     }
