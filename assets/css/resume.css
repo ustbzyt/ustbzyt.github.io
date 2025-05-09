@@ -4,14 +4,14 @@
     --secondary-color: #3498db;
     --text-color: #333;
     --light-gray: #f5f6fa;
-    --border-color: #e1e1e1;
+    --border-color: #fe0303;
     --shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 body {
     margin: 0;
     padding: 0;
-    background: rgb(183, 99, 209);
+    background: rgb(255, 255, 255);
 }
 
 .resume-container {
