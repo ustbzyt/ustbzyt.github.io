@@ -72,10 +72,10 @@
 
     <main class="cv-container">
         <h1 class="cv-page-title">My Projects</h1>
-        <p style="text-align: center; margin-bottom: 30px;">Explore how I leverage my skills in mass spectrometry, data analysis, automation, scripting, AI/ML, and AI agents, to tackle challenges and drive innovation within the biopharmaceutical field.</p>
+        <p style="text-align: center; margin-bottom: 30px;">Explore how I leverage my skills in mass spectrometry, scientific data analysis, workflow automation, custom scripting, applied AI/ML, and AI agents, to tackle challenges and drive innovation within the biopharmaceutical field..</p>
 
         <section class="cv-section project-entry">
-            <h2 class="cv-section-title">Automation of High-Throughput LC-MS Intact Mass Analysis Workflow for Antibody Biologics</h2>
+            <h2 class="cv-section-title">Automated Sequence Generation and Data Prep Toolkit for LC-MS Intact Mass Analysis of Antibody Biologics</h2>
             <div class="project-meta">
                 <p><strong>Organization:</strong> Bristol Myers Squibb</p> 
                 <p><strong>Date:</strong> May 2025</p>
@@ -88,26 +88,25 @@
                 <li><strong>Automated Sequence Generation:</strong>
                     <ul class="cv-item-list-nested">
                         <li>The script utilizes plate map information provided by users (colleagues submitting samples for LCMS analysis).</li>
-                        <li>It automatically generates a CSV file that can be directly imported into ThermoFisher Orbitrap mass spectrometer's Xcalibur software as an instrument run sequence. This eliminates tedious manual input of sample names, well positions, instrument methods, file save paths, and injection volumes.</li>
-                        <li>Concurrently, it generates a second CSV file specifically for the intact mass spectrometry data analysis using the Protein Metrics (Byos) software. After samples are analyzed on the mass spectrometer, raw data can be placed in a designated folder, and this CSV can be imported into Byos to initiate batch data analysis with minimal additional operations.</li>
+                        <li>It automatically generates a CSV file that can be directly imported into ThermoFisher Xcalibur software as an instrument run sequence.</li>
+                        <li>Concurrently, it generates a second CSV file for intact mass data analysis using Byos from Protein Metrics.</li>
                     </ul>
                 </li>
                 <li><strong>User-Friendly Design:</strong>
                     <ul class="cv-item-list-nested">
-                        <li>The script is equipped with a Graphical User Interface (GUI) for ease of use by colleagues without a programming background.</li>
-                        <li>It integrates automated features, such as automatic installation of required Python packages if they are missing on a colleague's computer.</li>
-                        <li>It offers various customizable settings, such as mass spectrometry data naming conventions and default data storage locations, to accommodate different user and project needs.</li>
+                        <li>Equipped with a GUI for ease of use by non-programmers.</li>
+                        <li>Automatically installs required Python packages.</li>
+                        <li>Offers customizable settings for naming conventions and data storage locations.</li>
                     </ul>
                 </li>
             </ul>
             <h3 class="project-subsection-title">Impact:</h3>
             <ul class="cv-item-list">
-                <li>Reduced a manual task that typically took 15-30 minutes down to approximately 1 minute using the automated script.</li>
-                <li>Minimized human errors during sample information entry.</li>
-                <li>Increased the overall efficiency and throughput of the intact mass analysis workflow.</li>
-                <li>Improved user experience for instrument operators and data analysts.</li>
+                <li>Reduced a manual task from ~15 min to ~15 sec for a single sequence.</li>
+                <li>Minimized human errors.</li>
+                <li>Improved user experience.</li>
             </ul>
-            <p class="project-tech"><strong>Technologies Used:</strong> Python, GUI Development (e.g., Tkinter, PyQt), CSV file processing.</p>
+            <p class="project-tech"><strong>Technologies Used:</strong> Python, GUI Development (Tkinter), CSV Processing</p>
         </section>
 
         <section class="cv-section project-entry">
