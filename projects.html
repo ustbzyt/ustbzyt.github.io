@@ -77,19 +77,19 @@
         <section class="cv-section project-entry">
             <h2 class="cv-section-title">Automation of High-Throughput LC-MS Intact Mass Analysis Workflow for Antibody Biologics</h2>
             <div class="project-meta">
-                <p><strong>Organization:</strong> Bristol Myers Squibb (as per your Profile)</p>
-                <p><strong>Date:</strong> Recent (e.g., 2023 - 2024, please fill in the specific time)</p>
+                <p><strong>Organization:</strong> Bristol Myers Squibb</p>
+                <p><strong>Date:</strong> May 2025</p>
             </div>
             <h3 class="project-subsection-title">The Challenge:</h3>
-            <p>High-throughput LC-MS intact mass analysis of antibody biologics (including bispecific antibodies, fusion proteins, etc.) generates a large volume of data. Manual operations for both instrument run sequence setup and subsequent data analysis preparation are time-consuming and prone to errors.</p>
+            <p>High-throughput LC-MS intact mass analysis is essential for antibody screening, but its efficiency is hindered by tedious manual sequence setup and data prep steps, which slow workflows, increase errors, and limit throughput.</p>
             <h3 class="project-subsection-title">My Solution:</h3>
-            <p>I developed a Python-based toolkit to significantly streamline this process:</p>
+            <p>I developed a Python-based toolkit to significantly streamline this process, initially targeting our group's specific LC-MS workflow. The toolkit is also designed to be adaptable for other similar assays with some modifications:</p>
             <ul class="cv-item-list">
                 <li><strong>Automated Sequence Generation:</strong>
                     <ul class="cv-item-list-nested">
                         <li>The script utilizes plate map information provided by users (colleagues submitting samples for LCMS analysis).</li>
-                        <li>It automatically generates a CSV file that can be directly imported into ThermoFisher Orbitrap mass spectrometer's Xcalibur software as an instrument run sequence. This eliminates tedious manual input of sample names, positions, instrument methods, file save paths, and injection volumes.</li>
-                        <li>Concurrently, it generates a second CSV file specifically for the intact mass spectrometry data analysis software, Protein Metrics (Byos). After samples are analyzed on the mass spectrometer, raw data can be placed in a designated folder, and this CSV can be imported into Byos to initiate batch data analysis with minimal additional operations.</li>
+                        <li>It automatically generates a CSV file that can be directly imported into ThermoFisher Orbitrap mass spectrometer's Xcalibur software as an instrument run sequence. This eliminates tedious manual input of sample names, well positions, instrument methods, file save paths, and injection volumes.</li>
+                        <li>Concurrently, it generates a second CSV file specifically for the intact mass spectrometry data analysis using the Protein Metrics (Byos) software. After samples are analyzed on the mass spectrometer, raw data can be placed in a designated folder, and this CSV can be imported into Byos to initiate batch data analysis with minimal additional operations.</li>
                     </ul>
                 </li>
                 <li><strong>User-Friendly Design:</strong>
