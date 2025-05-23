@@ -83,7 +83,7 @@
             <h3 class="project-subsection-title">The Challenge:</h3>
             <p>High-throughput LC-MS intact mass analysis is essential for biologics screening, but its efficiency is hindered by tedious manual sequence setup and data prep steps, which slow workflows, increase errors, and limit throughput.</p>
             <h3 class="project-subsection-title">My Solution:</h3>
-            <p>I developed a Python-based toolkit to significantly streamline this process, initially targeting our group's specific LC-MS workflow. The toolkit is also designed to be adaptable for other similar assays with some modifications:</p>
+            <p>I developed a toolkit to significantly streamline this process, initially targeting our group's specific LC-MS workflow. The toolkit is also designed to be adaptable for other similar assays with some modifications:</p>
             <ul class="cv-item-list">
                 <li><strong>Automated Sequence Generation:</strong>
                     <ul class="cv-item-list-nested">
@@ -110,39 +110,38 @@
         </section>
 
         <section class="cv-section project-entry">
-            <h2 class="cv-section-title">AI-Enhanced Intact Mass Data Communication: Automated Visualization and Expert-Level Comment Generation</h2>
+            <h2 class="cv-section-title">AI-Enhanced Intact Mass Data Communication: Expert-Level Comment and Automated Visualization</h2>
             <div class="project-meta">
                 <p><strong>Organization:</strong> Bristol Myers Squibb</p>
                 <p><strong>Date:</strong> May 2025</p>
             </div>
             <h3 class="project-subsection-title">The Challenge:</h3>
-            <p>Following data processing with Protein Metrics software, a critical bottleneck is the manual interpretation and commenting on experimental results for each sample. This task, traditionally performed by specialized mass spectrometry professionals to ensure clarity for non-specialists, is highly time-consuming, especially in high-throughput environments. Additionally, effectively visualizing 96-well plate results for trend analysis remains a key challenge.</p>
+            <p>Manual interpretation and commenting on results is time-consuming and requires expert insight. There was no existing solution for dynamic visualization of data across a 96-well plate.</p>
             <h3 class="project-subsection-title">My Solution:</h3>
-            <p>I developed a powerful program with two core functionalities:</p>
+            <p>I developed an automated tool with two core functionalities:</p>
             <ul class="cv-item-list">
-                <li><strong>AI-Driven Automated Comment Generation:</strong>
+                <li><strong>AI-Driven Comment Generation:</strong>
                     <ul class="cv-item-list-nested">
-                        <li>The program integrates report data exported from Protein Metrics with metadata from the plate map.</li>
-                        <li>This consolidated information is sent to a cloud-based Large Language Model (LLM), currently OpenAI's GPT-4.1.</li>
-                        <li>Through meticulous prompt engineering, the system leverages the LLM to automatically generate comments for each sample that emulate the insight of a biologics characterization expert. These comments are not only technically sound but also concise and easily understandable, greatly facilitating communication with non-specialist team members.</li>
+                        <li>Integrates Protein Metrics data with plate metadata.</li>
+                        <li>Sends data to GPT-4.1 via Azure OpenAI API using tailored prompts.</li>
+                        <li>Produces expert-level, concise, and accessible comments for each sample.</li>
                     </ul>
                 </li>
                 <li><strong>Interactive 96-Well Plate Heatmap Visualization:</strong>
                     <ul class="cv-item-list-nested">
-                        <li>The program processes report data exported from Protein Metrics software.</li>
-                        <li>Based on this data, it automatically generates an interactive HTML-formatted 96-well plate heatmap.</li>
-                        <li>This visualization clearly displays key metrics for each well, such as data quality and impurity levels, helping users quickly identify trends, assess sample quality, and make informed decisions.</li>
+                        <li>Processes exported data to create an HTML-format 96-well plate heatmap.</li>
+                        <li>Color-coded species categories  for easy differentiation.</li>
                     </ul>
                 </li>
             </ul>
             <h3 class="project-subsection-title">Impact:</h3>
             <ul class="cv-item-list">
-                <li>Automated a traditionally expert-driven task, significantly reducing the time and manual effort required by mass spectrometry professionals for writing individual sample comments.</li>
-                <li>Enhanced report clarity and consistency by providing high-quality, AI-generated interpretations accessible to a broader audience.</li>
-                <li>Enabled rapid identification of data trends and outliers through intuitive visualization.</li>
-                <li>Accelerated data-driven decision-making by making expert-level insights more readily available to project teams.</li>
+                <li>Automated a highly specialized task.</li>
+                <li>Improved clarity and consistency of reports.</li>
+                <li>Enabled rapid identification of trends.</li>
+                <li>Facilitated faster, more informed decision-making.</li>
             </ul>
-            <p class="project-tech"><strong>Technologies Used:</strong> Python, OpenAI API (GPT-4.1), Prompt Engineering, HTML, CSS, JavaScript (potentially for interactive visualization), Data Parsing.</p>
+            <p class="project-tech"><strong>Technologies Used:</strong> Python, Azure OpenAI API (GPT-4.1), Prompt Engineering, HTML.</p>
         </section>
 
     </main>
